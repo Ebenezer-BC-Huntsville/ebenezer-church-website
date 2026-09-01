@@ -247,7 +247,27 @@ a:hover { text-decoration: underline; }
 .gospel-colors-list strong {
   color: var(--ink);
 }
-
+.gospel-colors-list .gospel-item {
+  flex: 1;
+}
+.gospel-colors-list blockquote {
+  margin: 8px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--swatch);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.gospel-colors-list blockquote cite {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--gold-deep);
+  letter-spacing: 0.02em;
+}
 .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .fade-in.is-visible { opacity: 1; transform: translateY(0); }
 

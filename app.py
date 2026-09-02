@@ -20,6 +20,9 @@ from email.mime.text import MIMEText
 
 from flask import Flask, render_template, request, jsonify
 
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
 
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
